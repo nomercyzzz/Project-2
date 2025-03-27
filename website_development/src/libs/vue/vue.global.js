@@ -1,0 +1,1 @@
+Redirecting to https://unpkg.com/vue@3.5.13/dist/vue.global.js
