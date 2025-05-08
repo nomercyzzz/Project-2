@@ -3,14 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index/header.css">
+    <link rel="stylesheet" href="../styles/index/main.css">
+    <link rel="stylesheet" href="../styles/index/footer.css">
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap-icons.css">
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    
+    <link rel="stylesheet" href="../libs/aos/aos.css">
     <title>Minecraft Mod</title>
 </head>
 <body>
-    <script src="../libs/vue/vue.global.js"></script>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" 
+    data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0" 
+    style="
+      background-color: #000 !important;
+      padding: 0px !important;">
+        <header>
+          <nav id="navbar-example2" class="navbar fixed-top px-3 mb-3" :class="{ 'scrolled': isScrolled }">
+                <ul class="nav nav-pills">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#section1">Начало</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#section2">Примеры</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#section3">О нас</a>
+                  </li>
+                </ul>
+          </nav>
+          <div id="section1">
+          <div class="video-container">
+            <video autoplay loop muted playsinline>
+              <source src="../assets/videos/xxx/xxx.mp4" type="video/mp4">
+                  </video>
+                <h2><span class="text-animation">Просто опишите постройку — ИИ мгновенно создаст её!</span><span class="cursor-animation"></span></h2>
+                <button type="submit"><a href="/user-account" class="button">НАЧАТЬ</a></button>
+          </div>
+          <div class="photo-container" id="section1">
+            <p class="text">
+              С нашим модом для Minecraft создание уникальных построек стало проще, чем когда-либо.
+                Просто опишите свою идею, и ИИ мгновенно превратит её в реальность.
+                  </p>
+                    <div class="after-text">
+                      <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-offset="32">
+                        <p><span class="number">1.</span> Редактирование в реальном времени – настройте каждую деталь, чтобы идеально соответствовать вашему стилю.</p>
+                      </div>
+                      <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-offset="64">
+                <p :class="{'scrolled': isScrolled_text_2}"><span class="number">2.</span> Генерация по вашему запросу – от величественных замков до стильных современных домов.</p>
+                      </div>
+                      <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-offset="96">
+              <p :class="{'scrolled': isScrolled_text_3}"><span class="number">3.</span> Безграничные возможности – комбинируйте элементы и создавайте неограниченные миры.</p>
+                      </div>
+            </div>
+            <img src="../assets/images/header-photo.png">
+          </div>
+          </div>
+        </header>
+        <div class="main-background-color">
+        <main class="container" id="section2">
+          <div class="section_example_1">
+            <img src="../assets/images/main-photo-3.png" data-aos="fade-right" div data-aos-duration="1000" data-aos-easing="ease-out" data-aos-offset="256">
+            <div class="xxx_xxx" data-aos="fade-left" div data-aos-duration="500" data-aos-easing="ease-out" data-aos-delay="400">
+            <h3>Лунный замок</h3>
+            <p>Старинная крепость, освещенная мягким светом фонарей, возвышается над водной гладью. Идеально для любителей фэнтези и мистической атмосферы.
+            </p>
+          </div>
+          </div>
+          <div class="section_example_2">
+            <img src="../assets/images/main-photo-2.png" data-aos="fade-right" div data-aos-duration="800" data-aos-easing="ease-out" data-aos-offset="256" data-aos-delay="400">
+            <div class="xxx_ggg" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-out" data-aos-offset="256" data-aos-delay="400">
+            <h3>Тихая гавань</h3>
+            <p>Уютный особняк на берегу озера, окруженный природой. Создает ощущение уединения и спокойствия, словно место для отдыха вдали от цивилизации.
+            </p>
+          </div>
+          </div>
+          <div class="section_example_3">
+            <img src="../assets/images/main-photo-1.png" data-aos="fade-left" div data-aos-duration="800" data-aos-easing="ease-out" data-aos-offset="256" data-aos-delay="400">
+            <div class="xxx_zzz" data-aos="fade-right" div data-aos-duration="800" data-aos-easing="ease-out" data-aos-offset="256" data-aos-delay="400" >
+            <h3>Замок теней</h3>
+            <p>Темное, мрачное строение с высокими шпилями, затерянное в густом тумане. Внутри — переплетение секретных ходов, скрытых залов и загадочных символов.
+            </p>
+          </div>
+          </div>
+        </main>
+        </div>
+        <footer class="container" id="section3">
+          <p class="about-us">Мы – студенты направления Fullstack-разработки. Создаём проекты, пробуем новые технологии и просто кайфуем от кода.  
+             Этот сайт – один из наших экспериментов, где ИИ помогает строить уникальные миры в Minecraft.
+          </p>
+          <div class="contacs">
+          <div class="github">
+            <i class="bi bi-github"></i>
+            <p>GITHUB</p>
+            <a href="https://github.com/nomercyzzz">nomercyzzz</a>
+          </div>
+          <div class="email">
+            <i class="bi bi-envelope-fill"></i>
+            <p>EMAIL</p>
+            nomercy@gmail.xom
+          </div>
+          <div class="telegram">
+            <i class="bi bi-telegram"></i>
+            <p>TELEGRAM</p>
+            @nomercy
+          </div>
+          </div>
+          <p class="footer-end">© 2025 НедоСтудия. Все права не защищены.</p>
+      </footer>
+      
+  </div>
+
     <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../scripts/app.js"></script>
+
+    <script src="../libs/aos/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, // анимация будет выполняться только один раз 
+      });
+    </script>
 </body>
 </html>

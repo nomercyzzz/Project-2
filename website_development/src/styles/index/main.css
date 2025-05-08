@@ -1,0 +1,42 @@
+.section_example_1,.section_example_2{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.section_example_1{
+    margin-bottom: 50px;
+}
+.section_example_1 img{
+    width: 66%;
+}
+.xxx_xxx,.xxx_ggg{
+    color: #E5D7C2;
+    text-align: center;
+    padding-left: 32px;
+}
+.xxx_zzz{
+    color: #E5D7C2;
+    text-align: center;
+    padding-right: 32px;
+}
+/* полоска у фотки */
+.xxx_xxx{
+    border-left: 8px solid #FFC300;
+    width: 33.3333%;
+}
+.xxx_zzz,.xxx_ggg{
+    width: 50%;
+}
+.section_example_2 img,.section_example_3 img{
+    width: 50%;
+}
+.section_example_3{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+main{
+    margin-top: 80px;
+    overflow: hidden;
+}

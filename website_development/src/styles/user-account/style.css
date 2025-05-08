@@ -1,0 +1,144 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+/* КОНТЕЙНЕР С ВХОДОМ */
+.container-login{
+    padding: 0px 32px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 32px 0px rgba(138, 140, 142, 0.2);
+    display: flex;
+    width: 450px;
+    height: 75%;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+}
+.input-xxx{
+    position: relative;
+    margin: 20px 0;
+}
+/* текст в инпуте  */
+.input-xxx label{
+    font-size: 24px;
+    color: #A9A9A9;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    transition: top 0.3s;
+    transform: translateY(-50%);
+}
+/* сам инпут */
+.input-xxx input{
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #C0C0C0;
+    width: 350px;
+    height: 60px;
+    padding: 0 15px;
+    /* текст который вводят в инпут */
+    color: #A9A9A9;
+    font-size: 20px;
+}
+/* при написании цвет бордера */
+.input-xxx input:focus{
+    border: 1px solid aquamarine;
+}
+/* плавающий лейбел + псевдокласс юсер вэлид ( правильно ли поль ввел данные) */
+.input-xxx input:focus + label, .input-xxx input:user-valid + label{
+    font-size: 20px;
+    top: 0;
+    background-color: #fff;
+    color:aquamarine;
+}
+/* добавляем вэлид инпуту т к бордер слетает  */
+.input-xxx input:user-valid{
+    border: 1px solid aquamarine;
+}
+/* кнопка входа */
+.button-xxx button{
+    width: 100%;
+    font-size: 24px;
+    height: 70px;
+    padding: 0px;
+    border-radius: 8px;
+    margin-top: 8px;
+    background-color: aquamarine;
+    border: none;
+    color: #FFF;
+}
+.button-xxx button:hover{
+    transition: background 0.2s linear;
+    background: #66CDAA;
+}
+.button-xxx button:active{
+    transition: transform 0.1s linear;
+    transform: scale(0.95);
+}
+
+/* стили для оптиции */
+.option{
+    display: flex;
+
+    align-items: center;
+    position: relative;
+    bottom: 8px;
+    gap: 4px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.login-click, .registration-click{
+    margin: 16px 0;
+    font-size: 24px;
+    position: relative;
+    color: #A9A9A9;
+    transition: color 0.2s ease-in-out;
+}
+.login-click:hover, .registration-click:hover{
+    color: #808080;
+}
+/* полоска под текстом */
+.login-click::after, .registration-click::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: aquamarine;
+    transition: width 0.2s ease-in-out, left 0.2s ease-in-out;
+}
+.login-click:hover::after, .registration-click:hover::after{
+    width: 100%;
+    left: 0%;
+}
+
+
+
+/* КОНТЕЙНЕР С РЕГИСТРАЦИЕЙ */
+.container-registration{
+    padding: 0px 32px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 32px 0px rgba(138, 140, 142, 0.2);
+    display: flex;
+    width: 450px;
+    height: 75%;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* текст */
+.information {
+    font-size: 22px;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    color: #A9A9A9;
+}

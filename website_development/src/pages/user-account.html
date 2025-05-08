@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User account</title>
+    <link rel="stylesheet" href="../styles/user-account/style.css">
+
+</head>
+<body>
+    <div class="container-login">
+        <div class="option" style="margin-top: 15px;">
+            <p class="login-click">Вход</p>
+            <p class="registration-click">Регистрация</p>
+            <div class="information">
+                <p>Войдите в аккаунт или зарегистрируйтесь, нажав на кнопку.</p>
+            </div>
+        </div>
+    <!-- приравнием страницу логина к регистрации -->
+        <form> 
+            <div class="input-xxx">
+            <input type="text" id="login" name="login" required>
+            <label for="login"> Логин </label>
+            </div>
+            <div class="input-xxx">
+            <input type="password" id="password" name="password" required>
+            <label for="password"> Пароль </label>
+            </div>
+            <div class="button-xxx">
+                <button type="submit"> Войти </button>
+            </div>
+        </form>
+    </div>
+    <div class="container-registration">
+        <form>
+            <div class="option">
+                <p class="login-click">Вход</p>
+                <p class="registration-click">Регистрация</p>
+            </div>
+                <div class="input-xxx">
+                    <input type="text" id="login" name="login" required>
+                    <label for="login"> Логин </label>
+                </div>
+                    <div class="input-xxx">
+                        <input type="text" id="email" name="email" required>
+                        <label for="email"> Email </label>
+                    </div>
+            <div class="input-xxx">
+                <input type="password" id="password" name="password" required>
+                <label for="password"> Пароль </label>
+            </div>
+            <div class="button-xxx">
+                <button type="submit"> Зарегистрироваться </button>
+            </div>
+        </form>
+    </div>
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/user-account.js"></script>
+</body>
+</html>

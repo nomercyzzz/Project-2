@@ -1,0 +1,51 @@
+#section3{
+    margin-top: 80px;
+}
+.about-us{
+    font-size: 24px;
+    text-align: center;
+    color: #E5D7C2;
+    margin-bottom: 50px;
+}
+.contacs{
+    color: #E5D7C2;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.github,.email,.telegram{
+    width: 30%;
+    background-color: #3E2A1F;
+    text-align: center;
+    padding: 16px;
+    border-bottom: 4px solid #FFC300;
+    border-radius: 8px;
+}
+/* иконки */
+.bi{
+    font-size: 36px;
+    color: #FFC300;
+    border-bottom: 4px solid #FFC300;
+    padding-bottom: 50px ;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.contacs p{
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+.footer-end{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #E5D7C2;
+    margin-bottom: 0px;
+}
+.contacs a{
+    color:#E5D7C2;
+    text-decoration:none;
+}
+.contacs a:hover{
+    color: #FFA500;
+}
